@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<style>
+	</style>
+
+	<head>
+		<title>[Temporary] | Algebra</title>
+		<link rel="stylesheet" href="styles.css"/>
+		<link rel="stylesheet" href="algebra_styles.css"/>
+
+		<script>
+			var dropdown = document.getElementsByClassName("dropdown-btn");
+			var i;
+
+			for (i = 0; i < dropdown.length; i++) {
+  				dropdown[i].addEventListener("click", function() {
+    					this.classList.toggle("active");
+    					var dropdownContent = this.nextElementSibling;
+    					if (dropdownContent.style.display === "block") {
+      						dropdownContent.style.display = "none";
+    					} else {
+      						dropdownContent.style.display = "block";
+    					}
+  				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<header class="main-head">
+			<h1>Welcome to [Temporary]</h1>
+			<div class="navbar">
+  				<a href="homepage.htm">Home</a>
+  				<a href="aboutpage.htm">About</a>
+  				<div class="dropdown">
+    					<button class="dropbtn">Courses
+      						<i class="fa fa-caret-down"></i>
+    					</button>
+    					<div class="dropdown-content">
+      						<a href="algebra.htm">Algebra</a>
+     						<a href="geometry.htm">Geometry</a>
+      						<a href="physics.htm">Physics</a>
+    					</div>
+  				</div> 
+			</div>
+		</header>
+		
+		<section>
+			<div class="sidenav">
+  				<button class="dropdown-btn">Linear Algebra
+    					<i class="fa fa-caret-down"></i>
+  				</button>
+  				<div class="dropdown-container">
+    					<a href="homepage.htm">Link 1</a>
+    					<a href="#">Link 2</a>
+    					<a href="#">Link 3</a>
+  				</div>
+				
+  				<button class="dropdown-btn">Quadratics
+    					<i class="fa fa-caret-down"></i>
+  				</button>
+  				<div class="dropdown-container">
+    					<a href="#">Link 1</a>
+    					<a href="#">Link 2</a>
+    					<a href="#">Link 3</a>
+  				</div>
+			</div>
+		</section>
+
+		<footer class="main-foot">
+			<div class="footer-container">
+				<h1>[Temporary]</h1>
+				<ul>
+					<li><a href="https://www.youtube.com/" target=_blank><img class="icon" src="Images/YouTube.png"><a></li>
+					<li><a href="https://www.instagram.com/" target=_blank><img class="icon" src="Images/Instagram.png"><a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>

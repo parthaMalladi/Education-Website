@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: CornflowerBlue;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 5px 0 0 5px;
+    user-select: none;
+}
+
+
+.next {
+    right: -53px;
+    border-radius: 0 5px 5px 0;
+}
+
+.prev {
+    left: -53px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+#slide {
+    z-index: 2;
+}
+
+#imageCaption {
+    position: center;
+    padding: 1em 1em 1em 1em;
+    z-index: 1;
+    color: #444;
+    text-align: center;
+    border-radius: 5px;
+    background-image: url("Images/Back.png");
+    font-weight: bold;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fadeout {
+    -webkit-animation-name: fadeout;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeout;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .1;
+    }
+}
+
+.fadein {
+    -webkit-animation-name: fadein;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadein;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: .1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: .1;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+.info {
+    text-align: center;
+}
+
+.info div {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.info img {
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.info h2 {
+    background-image: url("Images/Back.png");
+    border-radius: 5px;
+}
+
+.info p {
+    width: 450px;
+}

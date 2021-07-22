@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+html, body {
+	font-family: Montserrat, sans-serif;
+  	margin: 0;
+  	color: #444;
+}
+
+.navbar {
+  	overflow: hidden;
+  	background-color: #333;
+}
+
+.navbar a {
+  	float: left;
+  	font-size: 16px;
+  	color: white;
+  	text-align: center;
+ 	padding: 14px 16px;
+  	text-decoration: none;
+}
+
+.dropdown {
+  	float: left;
+  	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  	font-size: 16px;  
+  	border: none;
+  	outline: none;
+  	color: white;
+  	padding: 14px 16px;
+  	background-color: inherit;
+  	font-family: inherit;
+  	margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  	background-color: CornflowerBlue;
+}
+
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+}
+
+.dropdown-content a {
+  	float: none;
+  	color: black;
+  	padding: 12px 16px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+
+.dropdown-content a:hover {
+  	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+
+.icon {
+	width: 50px;
+}
+
+.main-head {
+	background-image: url("Images/Back.png");
+	background-size: cover;
+	margin: 0;
+	padding-top: 5px;
+}
+
+.main-head h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+.main-foot {
+	background-image: url("Images/Back.png");
+	background-size: cover;
+}
+
+.footer-container {
+	display: flex;
+	align-items: center;
+	padding: 5px;
+}
+
+.footer-container h1 {
+	padding-left: 50px;
+}
+
+.footer-container ul {
+	flex-grow: 1;
+	text-align: end;
+	margin: 0;
+}
+
+.footer-container li {
+	display: inline;
+}
+
+.footer-container a {
+	padding: 0.5em;
+}
